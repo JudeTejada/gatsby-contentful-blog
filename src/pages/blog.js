@@ -66,7 +66,7 @@ const BlogPage = () => {
 
         <Posts >
           {data.allContentfulBlogPost.edges.map(({ node }) => (
-            <Post className={blogStyles.post}>
+            <Post >
               <Link key={node.title} to={`/blog/${node.slug}`}>
                 <h2> {node.title} </h2>
                 <p> {node.publishedDate}</p>
